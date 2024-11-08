@@ -169,19 +169,24 @@ CREATE DATABASE TestDB;
 
 Quelle commande permet d'appliquer des changements sous MariaDB?
 
-Que veux dire uid ?
+# [Linux] Que veux dire uid ?
+Un user identifier ou UID permet d'identifier un utilisateur sur les systèmes d'exploitation Unix et Linux.
 
 Que veux dire gid ?
 
-Que signifie LAMP ?
+# Que signifie LAMP ?
+Linux, Apache, MySQL & PHP
 
-Quel port utilise SMTP ?
+# Quel port utilise SMTP ?
+Port 587
 
-Quel port utilise IMAP ?
+# Quel port utilise IMAP ?
+Port 143
 
 [Windows Serveur -AD] Nommez 3 des 5 services Active Directory et donnez une brève définition de chaque service
 
-[Windows Serveur -AD] Qu'est-ce que la corbeille ADDS ?
+# [Windows Serveur -AD] Qu'est-ce que la corbeille ADDS ?
+La corbeille Active Directory permet aux utilisateurs de récupérer des objets Active Directory sans avoir à effectuer une restauration à partir d'une sauvegarde et sans être obligés de redémarrer les services de domaine Active Directory ou les contrôleurs de domaine (DC).
 
 [Windows Serveur -AD] Quels sont les 2 types de groupes ?
 
@@ -235,13 +240,17 @@ La fonction principale de VMware HA (High Availability) en cas de défaillance m
 
 [VMWare] Quels ports ou groupes de ports nécessitent des paramètres IPs ?
 
-[VMWare] Qu'est-ce que vCenter Converter Standalone ?
+# [VMWare] Qu'est-ce que vCenter Converter Standalone ?
+VMware vCenter Converter Standalone est un logiciel complet fournit par VMware dans le but d'effectuer la conversion de machine, notamment V2V (Virtual to Virtual) et P2V (Physical to Virtual), afin de convertir une machine physique en machine virtuelle ou une machine virtuelle vers un type de machine virtuelle
 
-[VMWare] Qu'est-ce que VMWare Update Manager ?
+# [VMWare] Qu'est-ce que VMWare Update Manager ?
+Update Manager vous permet d'effectuer les tâches suivantes : Mettez à niveau et corrigez les hôtes ESXi. Installez et mettez à niveau le logiciel tiers sur les hôtes. Mettre à niveau le matériel de machine virtuelle et VMware Tools.
 
-[OS] Quels sont les types d'hyperviseur et epxliquer leur fonction ?
+# [OS] Quels sont les types d'hyperviseur et epxliquer leur fonction ?
+L'hyperviseur de type 1 repose sur le serveur matériel nu et a un accès direct aux ressources matérielles. Pour cette raison, l'hyperviseur de type 1 est également connu sous le nom d'hyperviseur matériel nu. En revanche, l'hyperviseur de type 2 est une application installée sur le système d'exploitation hôte.
 
-[OS] Qu'est-ce que la virtuaoisation d'application? Citez en un exemple.
+# [OS] Qu'est-ce que la virtualisation d'application ?
+Élimination des conflits d'application: la virtualisation des applications permet à un utilisateur d'exécuter simultanément différentes versions du même logiciel, par exemple dans une usine de fabrication, ou d'exécuter en toute sécurité des applications mutuellement exclusives sur le même système d'utilisateur.
 
 [OS] Qu'est-ce que la virtualisation d'OS ? Citez en un exemple.
 
@@ -263,17 +272,22 @@ La fonction principale de VMware HA (High Availability) en cas de défaillance m
 
 [Linux] Que permet de faire la commande "cat" ?
 
-[Linux] A quoi correspond le "-m" dans la commande "useradd -m -G formateurs, users -s /bin/bash matthieu" ?
+# [Linux] A quoi correspond le "-m" dans la commande "useradd -m -G formateurs, users -s /bin/bash matthieu" ?
+-m : Cette option demande au système de créer automatiquement un répertoire personnel pour l'utilisateur (généralement situé dans /home/nom_utilisateur). Dans ce cas, un dossier /home/matthieu sera créé pour l'utilisateur "matthieu".
 
-[Linux] A quoi correspond le "-G" dans la commande "useradd -m -G formateurs, users -s /bin/bash matthieu" ?
+# [Linux] A quoi correspond le "-G" dans la commande "useradd -m -G formateurs, users -s /bin/bash matthieu" ?
+-G formateurs,users : Cette option permet de spécifier des groupes supplémentaires auxquels l'utilisateur doit être ajouté. Ici, "matthieu" sera ajouté aux groupes formateurs et users en plus de son groupe principal.
 
-[Linux] A quoi correspond le "-s" dans la commande "useradd -m -F formateurs, users -s /bin/bash matthieu" ?
+# [Linux] A quoi correspond le "-s" dans la commande "useradd -m -F formateurs, users -s /bin/bash matthieu" ?
+-s /bin/bash : Cette option définit le shell de connexion de l'utilisateur. Dans cet exemple, le shell de l'utilisateur "matthieu" sera /bin/bash.
 
 [Linux] Que signifie cette commande "ls -ld /home/matthieu/formation/" ?
 
-[Linux] Quelle commande utilises-t-on pour changer le possesseur (de Matthieu à Pascal) du fichier "/home/matthieu/formation.pdf" ?
+# [Linux] Quelle commande utilises-t-on pour changer le possesseur (de Matthieu à Pascal) du fichier "/home/matthieu/formation.pdf" ?
+chown
 
-[Linux] Quelle commande utilises-t-on pour changer le groupe (de Matthieu à Formateur) du dossier "/home/matthieu/formation/ ?
+# [Linux] Quelle commande utilises-t-on pour changer le groupe (de Matthieu à Formateur) du dossier "/home/matthieu/formation/ ?
+chgrp
 
 [Linux] Quelle commande utilises-t-on pour changer en même temps le possesseur (de Matthieu à Pascal) et le groupe (de Matthieu à Formateur) du fichier "/home/matthieu/formation/questions.pdf" ?
 
