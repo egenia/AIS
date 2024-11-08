@@ -666,7 +666,8 @@ Quel port utilise IMAP ?
 
 [Réseaux] Quel est le mode du câble que nous devons utiliser entre deux routeurs ?
 
-[Réseaux] Qu'est-ce qu'un port ?
+# [Réseaux] Qu'est-ce qu'un port ?
+Les ports servent à identifier un point de terminaison de connexion et à orienter les données vers un service. Il existe des ports virtuels et physiques : Un port USB est un exemple de port physique. C'est souvent le premier qui nous vient à l'esprit lorsque l'on pense aux ports d'ordinateur. Cependant, les ports virtuels sont bien plus courants, et sont essentiels au fonctionnement d'Internet. Les ports font partie de la couche 4, la couche de transport, du modèle OSI d'Internet.
 
 [Réseaux] Quelles sont les commandes pour créer et administrer une sous-interface sur un routeur ?
 
@@ -678,6 +679,10 @@ Quel port utilise IMAP ?
 
 [Réseaux] Décrire la structure des datagrammes IP ? (7 champs)
 
-[Réseaux] Qu'est-ce qu'une table ARP et à quoi correspond l'acronyme ?
+# [Réseaux] Qu'est-ce qu'une table ARP et à quoi correspond l'acronyme ?
+L'Address Resolution Protocol (ARP, protocole de résolution d'adresse) est un protocole utilisé pour associer l'adresse de protocole de couche réseau (typiquement une adresse IPv4) d'un hôte distant, à son adresse de protocole de couche de liaison (typiquement une adresse MAC).
 
-[Réseaux] Quel est le protocole utilisé par le Ping et comment il fonctionne ?
+# [Réseaux] Quel est le protocole utilisé par le Ping et comment il fonctionne ?
+Ping est utilisé pour déterminer si l'hôte local peut échanger avec succès (envoyer et recevoir) des paquets de données avec un autre hôte. En fonction des informations renvoyées, on peut déduire si les paramètres TCP/IP sont définis correctement, si le fonctionnement est normal, si le réseau n'est pas obstrué, etc.
+
+D'après le processus de fonctionnement de Ping, nous pouvons savoir que l'hôte A a reçu un paquet de réponse de l'hôte B, ce qui indique que les chemins de retour et d'aller-retour entre les deux hôtes sont normaux. En d'autres termes, il n'y a pas de problème entre l'hôte A et l'hôte B ou entre l'hôte B et l'hôte A.
