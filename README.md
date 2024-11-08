@@ -549,11 +549,21 @@ Quel port utilise IMAP ?
 
 [Réseaux] Quelles sont les classes d'adresses et me les décrire ?
 
-[Réseaux] Quelle est la différence entre IPv4 et IPv6 ?
+# [Réseaux] Quelle est la différence entre IPv4 et IPv6 ?
+IPv6 (IP version 6), défini dans le document RFC 2460, est la toute dernière génération du protocole Internet (IP) défini par l'Internet Engineering Task Force (IETF). La première version stable du protocole Internet (IP) était IPv4 (IP version 4). Même si IPv6 est destiné à remplacer un jour IPv4, ces deux protocoles sont actuellement étroitement mêlés : la plupart des ingénieurs les exécutent ensemble. 
+IPv6 offre les améliorations suivantes par rapport à IPv4 :
+
+- Routage plus efficace sans fragmentation des paquets
+- Qualité de service (QoS) intégrée qui identifie les paquets prioritaires
+- Élimination du NAT pour étendre l'espace d'adressage de 32 à 128 bits
+- Sécurité de couche réseau intégrée (IPsec)
+- Configuration automatique des adresses sans état pour simplifier l'administration du réseau
+- Structure d'en-tête améliorée et réduction du coût de traitement
 
 [Réseaux] Qu'est-ce qu'une agrégation de liens et à quoi ca sert ?
 
-[Réseaux] Qu'est-ce que le STP ?
+# [Réseaux] Qu'est-ce que le STP ?
+Le Spanning Tree Protocol, ou STP, optimise le trafic du réseau LAN Ethernet en supprimant les boucles et en réacheminant ce trafic autour des noeuds désactivés. Le Spanning Tree Protocol (STP), parfois appelé simplement Spanning Tree, est comparable à Waze ou à MapQuest pour les réseaux Ethernet modernes.
 
 [Réseaux] Quelle est la commande pour faire une route statique et sur quel équipement le fait-on ?
 
