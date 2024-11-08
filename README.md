@@ -107,7 +107,8 @@ Il s'agit d'une commande Linux qui permet de changer les droits sur les fichiers
 
 Qu'est-ce que les sudoers ?
 
-Quel est le nom du superutilisateur sous Unix Linux ?
+# Quel est le nom du superutilisateur sous Unix Linux ?
+root
 
 Quelle est la commande qui permet d'afficher un répertoire et ses sous-répertoires en arboresence ?
 
@@ -117,19 +118,25 @@ Citez un exemple de service DNS sous Linux
 
 Citez une commande pour redémarrer un service
 
-A quoi sert le fichier /etc/host.conf ?
+# A quoi sert le fichier /etc/host.conf ?
+C'est le fichier /etc/hosts qui est interrogé en premier avant qu'une requête DNS soit envoyé à vos serveurs DNS. Ce fichiers hosts permet de convertir des noms d'hôtes (FQDN, URL) en adresses IP qui sont les adresses compréhensibles par les ordinateurs.
 
-A quoi sert le fichier /etc/hosts ?
+# A quoi sert le fichier /etc/hosts ?
+Le fichier /etc/hosts. equiv , ainsi que les fichiers locaux $HOME/. rhosts , définissent les hôtes (ordinateurs sur un réseau) et les comptes utilisateur qui peuvent appeler des commandes à distance sur un hôte local sans fournir de mot de passe.
 
-Comment s'appelle l'utilitaire de gestion des paramètres réseaux en interface graphique ?
+# Comment s'appelle l'utilitaire de gestion des paramètres réseaux en interface graphique ?
+Network-Manager est fourni avec un petit utilitaire permettant de gérer les connexions dans un environnement pseudo graphique. Cet utilitaire est extrêmement pratique pour les serveurs qui ne disposent pas d'interfaces graphiques.
 
 Quelle commande permet de voir la résolution d'une adresse avec son FQDN ?
 
-Que signifie FTP ?
+# Que signifie FTP ?
+File Transfer Protocol (FTP) est un protocole standard pour la transmission de fichiers entre ordinateurs sur Internet par le biais de connexions TCP/IP.
 
-Que signifie FTPS ?
+# Que signifie FTPS ?
+Il s'agit de la version Secure de FTP.
 
-Quel port réseau utilise le FTP ?
+# Quel port réseau utilise le FTP ?
+21
 
 Citez un exemple de service FTP sous Linux
 
@@ -139,19 +146,28 @@ Citez 2 exemples de clients FTP
 
 Quelle est la commande pour ajouter un utilisateur ?
 
-Que signifie TLS ?
+# Que signifie TLS ?
+Transport Layer Security (TLS), comme son prédécesseur Secure Sockets Layer (SSL), est un protocole utilisé par les applications pour communiquer de manière sécurisée à travers un réseau, tout en prévenant la falsification et l'interception des courriels, navigations web, messageries et autres protocoles.
 
-Que signifie SMTP ?
+# Que signifie SMTP ?
+SMTP est l'abréviation de Simple Mail Transfer Protocol. Il s'agit d'un protocole de communication utilisé pour envoyer et recevoir des messages électroniques sur Internet.
 
-Que signifie POP ?
+# Que signifie POP ?
+Post Office Protocol
+Le protocole POP permet de supprimer les messages et les pièces jointes du serveur une fois que vous les avez reçus sur votre appareil. Une fois les messages supprimés du serveur, ils ne sont plus accessibles sur un autre appareil.
 
-Que signifie IMAP ?
+# Que signifie IMAP ?
+IMAP (Internet Message) Protocole d'accès à la messagerie Internet. Avec les comptes IMAP, les messages sont stockés dans un serveur distant. Les utilisateurs peuvent se connecter via plusieurs clients e-mail sur des ordinateurs ou des appareils mobiles et lire les mêmes messages.
 
-Qu'est-ce qu'un Webmail ?
+# Qu'est-ce qu'un Webmail ?
+Il s'agit d'une interface graphique permettant d'accéder à sa messagerie.
 
-Quelle commande permet de créer une base de données sous MariaDB ?
+# Quelle commande permet de créer une base de données sous MariaDB ?
+sudo mariadb
+Puis : 
+CREATE DATABASE TestDB;
 
-Quelle commande permet d'appliquer des changements sous MAriaDB?
+Quelle commande permet d'appliquer des changements sous MariaDB?
 
 Que veux dire uid ?
 
@@ -197,13 +213,17 @@ Quel port utilise IMAP ?
 
 [Windows Serveur -AD] Quel est le nom de l'hypervisuer qui se trouve dans les rôles de Windows Serveurs ?
 
-[VMWare] Qu'est-ce que vSpehre DRS ?
+# [VMWare] Qu'est-ce que vSphere DRS ?
+vSphere DRS est une fonctionnalité essentielle de vSphere qui est requise pour maintenir la santé des charges de travail exécutées dans un cluster vSphere
 
-[VMWare] Qu'est-ce que vMotion ?
+# [VMWare] Qu'est-ce que vMotion ?
+Storage vMotion permet de migrer une machine virtuelle et ses fichiers de disques d'une banque de données vers une autre pendant que la machine virtuelle est en cours d'exécution.
 
-[VMWare] Qu'est-ce que le déploiement à partir d'un modèle ?
+# [VMWare] Qu'est-ce que le déploiement à partir d'un modèle ?
+Le déploiement d'un modèle OVF ou OVA vous permet d'ajouter des machines virtuelles ou des vApp préconfigurés à votre système vCenter Server ou à votre inventaire ESXi. Le déploiement d'un modèle OVF ou OVA est semblable au déploiement d'une machine virtuelle à partir d'un modèle.
 
-[VMWare] Qu'est-ce que VMWare HA ?
+# [VMWare] Qu'est-ce que VMWare HA ?
+La fonction principale de VMware HA (High Availability) en cas de défaillance matérielle est de redémarrer les machines virtuelles sur un autre hôte du cluster. HA permet aussi de surveiller les VMs ainsi que les applications.
 
 [VMWare] Qu'est-ce que l'option Mode Maintenance ?
 
@@ -219,7 +239,7 @@ Quel port utilise IMAP ?
 
 [VMWare] Qu'est-ce que VMWare Update Manager ?
 
-[OS] Quels sont les types d'hypervisuer et epxliquer leur fonction ?
+[OS] Quels sont les types d'hyperviseur et epxliquer leur fonction ?
 
 [OS] Qu'est-ce que la virtuaoisation d'application? Citez en un exemple.
 
@@ -271,7 +291,8 @@ Quel port utilise IMAP ?
 
 [Linux-services] Que signifie un DNS récursif ?
 
-[Linux-services] Qu'est-ce qu'un cache DNS ?
+# [Linux-services] Qu'est-ce qu'un cache DNS ?
+Un cache DNS stocke les enregistrements de ressources (RR) de tous les sites récemment visités jusqu'à l'expiration de la durée de vie (TTL) des enregistrements DNS.
 
 [Linux-services] Expliquez "order hosts,bind" présent dans un fichier "/etc/host.conf"
 
@@ -279,11 +300,14 @@ Quel port utilise IMAP ?
 
 [Linux-services] Que permet de faire la commande "dig" sur un nom de domaine ?
 
-[Linux-services] Que permet de faire la commande "named-checkzone" sur un nom de domaine ?
+# [Linux-services] Que permet de faire la commande "named-checkzone" sur un nom de domaine ?
+La commande named-checkzone vérifie la syntaxe et l'intégrité d'un fichier de zone. Il effectue les mêmes vérifications que le démon nommé lors du chargement d'une zone. Cela rend la commande named-checkzone utile pour vérifier les fichiers de zone avant de les configurer dans un serveur de noms.
 
-[Linux-services] Quelle est la différence entre FTP, FTPS et SFTP ?
+# [Linux-services] Quelle est la différence entre FTP, FTPS et SFTP ?
+Les trois servent à transférer des fichiers. FTP fonctionne sur le port 21 et est non sécurisé, cela signifie que les données ne sont pas chiffrées. La version FTPS chiffre ces données. Quant à SFTP, il fonctionne au dessus de SSH sur le port 22.
 
-[Linux-services] A quoi sert la directive "AllowOverwrite" dans un fichier de configuration FTP ?
+# [Linux-services] A quoi sert la directive "AllowOverwrite" dans un fichier de configuration FTP ?
+La directive AllowOverwrite est désactivée pour éviter que les données déjà sauvegardées ne soient écrasées lors du téléchargement de fichiers.
 
 [Linux-services] Quel est masque par défaut concernant les permissions dans répertoire utilisateur FTP ?
 
@@ -317,7 +341,8 @@ Quel port utilise IMAP ?
 
 [Windows Server - AD] Quels sont les 4 champs de groupes ?
 
-[Windows Server - AD] Qu'est-ce que starter GPO ?
+# [Windows Server - AD] Qu'est-ce que starter GPO ?
+Comme son nom peut le laisser penser, il s'agit d'une GPO qui va servir de point de départ pour créer une ou plusieurs autres GPO ; autrement dit il s'agit d'un template.
 
 [Windows Server - AD] Quelles options sont configurables dans les Préférences ?
 
@@ -327,11 +352,16 @@ Quel port utilise IMAP ?
 
 [Windows Server - AD] Quelles méthodes peuvent être utilisées pour automatiser l'installation d'ADDS ?
 
-[Windows Server - AD] Quel est le schéma ADDS ?
+# [Windows Server - AD] Quel est le schéma ADDS ?
+Le schéma Microsoft Active Directory contient des définitions formelles de chaque classe d'objets qui peuvent être créées dans une forêt Active Directory. Le schéma contient également des définitions formelles de chaque attribut qui peut exister dans un objet Active Directory.
 
 [Windows Server - AD] Comment sauvegarder ADDS ?
 
-[Windows Server - AD] Nommez 2 des 4 groupes par défaut.
+# [Windows Server - AD] Nommez 2 des 4 groupes par défaut.
+Il existe deux types de groupes: sécurité (gérer les autorisations d'accès aux ressources) et distribution (création de listes de distribution, pour Exchange par exemple).
+- Groupes intégrés (built-in) : étendue locale. Permet d'assigner des autorisations à des fonctions d'administration.
+- Groupes spéciaux : groupes gérés exclusivement par le système.
+- Groupes prédéfinis : sont là en complément des groupes intégrés, sauf que pour eux il y a différents niveaux d'étendues qui sont prédéfinies et que l'on ne peut pas modifier.
 
 [Windows Server - AD] Expliquez le concept de gestion basée sur le rôle.
 
@@ -467,7 +497,10 @@ Quel port utilise IMAP ?
 
 [Linux-services] A quoi correspond "USER" et "PASS" dans un canal de commande FTP ?
 
-[Linux-services] A quoi correspond "LIST", "STOR" et "RETR" dans un canal de données FTP ?
+# [Linux-services] A quoi correspond "LIST", "STOR" et "RETR" dans un canal de données FTP ?
+- LIST permet de récupérer la liste des fichiers et dossiers
+- STOR permet l'upload de données
+- RETR permet le téléchargement de fichiers
 
 [Linux-services] Dans Wireshark, quelle est la commande à entrer dans la barre de recherche si on veut filtrer une requête par adresse IP et par le protocole ftp ?
 
@@ -485,7 +518,8 @@ Quel port utilise IMAP ?
 
 [Windows Server - AD] Quelles sont les groupes qui sont autorisés à être convertit ?
 
-[Windows Server - AD] Quel est le fichier NTDS.dit ?
+# [Windows Server - AD] Quel est le fichier NTDS.dit ?
+Le fichier ntds. dit est une base de données où sont stockées les informations de l'Active Directory, notamment sur les objets utilisateur, les groupes et les appartenances à un groupe.
 
 [Windows Server - AD] Qu'est-ce qu'une authentification autonome ?
 
@@ -533,11 +567,16 @@ Quel port utilise IMAP ?
 
 [VMware] Nommez 3 meilleures pratiques d'installation d'ESXi
 
-[Réseaux] Qu'est-ce qu'une adresse IP ?
+# [Réseaux] Qu'est-ce qu'une adresse IP ?
+Une adresse IP (Internet Protocol) est un numéro d'identification unique attribué de façon permanente ou provisoire à chaque périphérique faisant partie d'un même réseau informatique utilisant l'Internet Protocol. L'adresse IP est à l'origine du système d'acheminement (le routage) des paquets de données sur Internet.
 
-[Réseaux] De quoi est constitué un octet ?
+Il existe deux grandes versions d'adresses IP : la version 4 (IPv4) codée sur 32 bits, et la version 6 (IPv6) codée sur 128 bits. La version 4 est actuellement la plus utilisée : elle est généralement représentée en notation décimale avec quatre nombres compris entre 0 et 255, séparés par des points, ce qui donne par exemple « 181.174.87.53 ».
 
-[Réseaux] Quelles sont les valeurs d'un bit ?
+# [Réseaux] De quoi est constitué un octet ?
+En informatique, un octet est un multiplet de 8 bits codant une information. Dans ce système de codage s'appuyant sur le système binaire, un octet permet de représenter 28 nombres, soit 256 valeurs différentes.
+
+# [Réseaux] Quelles sont les valeurs d'un bit ?
+0 ou 1
 
 [Réseaux] Quelle est l'adresse maximale sur un réseau en classe B ?
 
@@ -589,9 +628,13 @@ Le Spanning Tree Protocol, ou STP, optimise le trafic du réseau LAN Ethernet en
 
 [Réseaux] Comment se désactive le spanning-tree sur un switch ?
 
-[Réseaux] Qu'est-ce que le procole RIP ?
+# [Réseaux] Qu'est-ce que le procole RIP ?
+Routing Information Protocol (RIP, protocole d'information de routage) est un protocole de routage IP de type Vector Distance (à vecteur de distances) s'appuyant sur l'algorithme de détermination des routes décentralisé Bellman-Ford. Il permet à chaque routeur de communiquer avec les routeurs voisins. La métrique utilisée est la distance qui sépare un routeur d'un réseau IP déterminé quant au nombre de sauts (ou « hops » en anglais).
 
-[Réseaux] Qu'est-ce qu'un MAN ?
+Pour chaque réseau IP connu, chaque routeur conserve l'adresse du routeur voisin dont la métrique est la plus petite. Ces meilleures routes sont diffusées toutes les 30 secondes.
+
+# [Réseaux] Qu'est-ce qu'un MAN ?
+Il s'agit d'un réseau métropolitain. Il désigne un réseau composé d'ordinateurs habituellement utilisé dans les campus ou dans les villes. Ce réseau utilise généralement de la fibre optique.
 
 [Réseaux] Qu'est-ce qu'un WAN ?
 
