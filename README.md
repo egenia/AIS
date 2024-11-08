@@ -60,38 +60,50 @@ Un logiciel Open Source est un logiciel informatique publié sous une licence da
  - Pacman (Arch Linux, Manjaro)
  - Yarn (alternative open source npm)
 
-# Qu'est-ce que GRUB ?
+# [Linux] Qu'est-ce que GRUB ?
 GNU Grub est un programme d'amorçage de micro-ordinateur. Il s'exécute à la mise sous tension de l'ordinateur, après les séquences de contrôle interne et avant le système d'exploitation proprement dit, puisque son rôle est justement d'organiser le chargement.
 
-# Qu'est-ce qu'un shell ?
+# [Linux] Qu'est-ce qu'un shell ?
 Une interface système ou coque logicielle1 (shell en anglais2) est une couche logicielle qui fournit l'interface utilisateur d'un système d'exploitation. Il correspond à la couche la plus externe de ce dernier. L'interface système est utilisée comme diminutif de l'interface utilisateur du système d'exploitation.
 
-# Que permet de faire la commande "man" ?
+# [Linux] Que permet de faire la commande "man" ?
 man est une commande disponible sur les systèmes d'exploitation de type Unix. Elle permet de **visionner les contenus d'une documentation formatée pour être exploitable par man** ; à l'origine, elle sert à accéder aux manuels des commandes d'un shell Unix et à la description des fonctions du langage C.
 
-Avec quelle commande pouvez-vous vous déplacer dans les dossiers ?
+# [Linux] Avec quelle commande pouvez-vous vous déplacer dans les dossiers ?
+La commande "cd" (Change Directory) permet de se déplacer dans l'arborescence de dossiers.
 
-Quelle commande permet d'afficher un nom de répertoire ?
+# [Linux] Quelle commande permet d'afficher un nom de répertoire ?
+La commande 'pwd' permet d'afficher le répertoire dans lequel l'on se trouve.
 
-Que permet de faire la commande "mkdir" ?
+# [Linux] Que permet de faire la commande "mkdir" ?
+Cette commande permet la création de dossiers.
 
-Avec quelle commande pouvez-vous supprimer un répertoire vide ?
+# [Linux] Avec quelle commande pouvez-vous supprimer un répertoire vide ?
+Un répertoire vide peut être supprimé via la commande 'rmdir'.
 
-Avec quelle commande pouvez-vous créer un fichier ?
+# [Linux] Avec quelle commande pouvez-vous créer un fichier ?
+Nous pouvons créer un fichier de plusieurs manières, mais la commande 'touch' permet de le faire.
 
-Que permet de faire la commande "who"
+# [Linux] Que permet de faire la commande "who"
+La commande 'who' permet de voir les utilisateurs connectés sur la machine.
 
-A quel droit correspond le "d" dans "drwxr-x--x" ?
+# [Linux]A quel droit correspond le "d" dans "drwxr-x--x" ?
+Le 'd' correspond à 'directory', il s'agit donc d'un dossier.
 
-A quel droit correspond le "r" dans "drwxr-x--x" ?
+# [Linux] A quel droit correspond le "r" dans "drwxr-x--x" ?
+Le 'r' correspond à 'read', donc aux droits de lecture.
 
-A quel droit correspond le "w" dans "drwxr-x--x" ?
+# [Linux]A quel droit correspond le "w" dans "drwxr-x--x" ?
+Le 'w' correspond aux droits d'écriture, comme 'write'.
 
-A quel droit correspond le "x" dans "drwxr-x--x" ?
+# [Linux] A quel droit correspond le "x" dans "drwxr-x--x" ?
+'x' signifie 'execute', donc aux droits d'exécution.
 
-A quel droit correspond le "-" dans "drwxr-x--x" ?
+# [Linux] A quel droit correspond le "-" dans "drwxr-x--x" ?
+Le '-' signifie que le droit n'est pas activé.
 
-Qu'est-ce que CHMOD ?
+# [Linux] Qu'est-ce que CHMOD ?
+Il s'agit d'une commande Linux qui permet de changer les droits sur les fichiers et dossiers.
 
 Qu'est-ce que les sudoers ?
 
